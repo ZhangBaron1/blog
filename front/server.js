@@ -108,7 +108,7 @@ config.flushOption().then(() => {
     // proxy with node in production
     if (url.startsWith(prefix)) {
       const rewriteUrl = `http://localhost:${config.serverPort}/${url.replace(prefix, '')}`
-      proxyRequest.get(rewriteUrl).on('error', (err) => {
+      proxyRequest.get(encodeURI(rewriteUrl)).on('error', (err) => {
         res.end(err)
         log.error(err)
       }).pipe(res)

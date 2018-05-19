@@ -4,10 +4,6 @@
           :style="imageStyle">
     <div class=wrap>
       <div class=profile>
-        <a href="/"> 
-          <img :src="logoUrl" 
-            :alt="siteInfo.title.value">
-        </a> 
         <span :style="{ 'color': sidebarUrl ? option.sidebarFontColor : '' }" >{{siteInfo.title.value}}</span>
       </div>
       <ul class="buttons" v-if="option && option.menu">
