@@ -1,7 +1,7 @@
 <template>
   <footer id="footer" class="inner">
-    &copy; 2016&nbsp;-&nbsp; {{ siteInfo.title.value }} &nbsp;-&nbsp;
-    <a v-if="!(siteInfo.miitbeian.value)" target=_blank href="https://github.com/smallpath/blog">博客源码</a>
+    &copy; 2018&nbsp;-&nbsp; {{ siteInfo.title.value }} &nbsp;-&nbsp;
+    <a v-if="!(siteInfo.miitbeian.value)" target=_blank href="https://github.com/nullscc/blog">Source Code</a>
     <a v-else target="_blank" rel="nofollow noopener" 
         href="http://www.miitbeian.gov.cn/"
         style="color: #666"

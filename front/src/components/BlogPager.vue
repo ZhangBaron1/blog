@@ -51,7 +51,7 @@ export default {
   name: 'blog-pager',
   metaInfo() {
     return {
-      title: '首页'
+      title: 'Home'
     }
   },
   components: {

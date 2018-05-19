@@ -6,7 +6,7 @@
     <h1 class="title"> <router-link :to="{ name:'post', params:{ pathName: article.pathName } }" >{{ article.title }}</router-link></h1>
     <div class="entry-content">
       <div v-html="filterWebp(article.summary)"/>
-      <router-link :to="{ name:'post', params:{ pathName: article.pathName } }" >阅读更多 »</router-link>
+      <router-link :to="{ name:'post', params:{ pathName: article.pathName } }" >Read More »</router-link>
     </div>
   </article>
 </template>

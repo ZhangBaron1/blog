@@ -10,20 +10,20 @@
         <div class="entry-content" v-html="content"></div>
 
         <template v-if="shouldShow">
-          <p>本文链接：<a :href="siteURL+ '/post/'+ post.pathName">{{siteURL}}/post/{{post.pathName}}</a></p>
+          <p>Permanent link of this article：<a :href="siteURL+ '/post/'+ post.pathName">{{siteURL}}/post/{{post.pathName}}</a></p>
           <p>-- <acronym title="End of File">EOF</acronym> --</p>
           <div class="post-info">
-            <p> 发表于 <i>{{post.createdAt}}</i> ，
-              添加在分类「
+            <p> Publish at <i>{{post.createdAt}}</i> ，
+              Category under「
               <a :data-cate="post.category">
                   <code class="notebook">{{post.category}}</code>
-              </a> 」下 ，并被添加「
+              </a> 」, and add tag under「
               <router-link v-for="tag in post.tags" 
                   :to="{name:'tagPager', params: { tagName: tag }}"
                   :key="tag"
                   :data-tag="tag"> 
                   <code class="notebook">{{tag}}</code>
-              </router-link> 」标签 ，最后修改于 <i>{{post.updatedAt}}</i>
+              </router-link> 」, last update time <i>{{post.updatedAt}}</i>
             </p>
           </div>
         </template>

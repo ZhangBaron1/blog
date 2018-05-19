@@ -49,7 +49,7 @@ export default {
   },
   data() {
     return {
-      title: '归档'
+      title: 'ARCHIVE'
     }
   },
   computed: {

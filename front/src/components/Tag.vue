@@ -43,7 +43,7 @@ export default {
   },
   data() {
     return {
-      title: '标签'
+      title: 'TAG'
     }
   },
   computed: {

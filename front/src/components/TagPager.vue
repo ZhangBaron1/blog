@@ -1,7 +1,7 @@
 <template>
   <div id='main'>
     <section id="page-index">
-      <h1 class="intro">标签<a href="javascript:void(0)">{{$route.params.tagName}}</a>下的文章</h1>
+      <h1 class="intro">Articles of tag under <a href="javascript:void(0)">{{$route.params.tagName}}</a></h1>
       <blog-summary v-for="item in tagPager" :key="item._id" :support-webp="supportWebp" :article="item" ></blog-summary>
       <pagination :page="1" :total-page="1" ></pagination>
     </section>
@@ -42,7 +42,7 @@ function getItems(store, { path, query, params }, callback) {
 export default {
   metaInfo() {
     return {
-      title: `标签${this.$route.params.tagName}下的文章`
+      title: `Articles of tag under ${this.$route.params.tagName}`
     }
   },
   components: {
