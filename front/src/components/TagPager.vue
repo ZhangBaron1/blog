@@ -32,7 +32,7 @@ function getItems(store, { path, query, params }, callback) {
         pathName: 1
       },
       sort: {
-        updatedAt: -1
+        createdAt: -1
       }
     },
     callback
