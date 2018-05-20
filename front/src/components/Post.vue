@@ -10,20 +10,20 @@
         <div class="entry-content" v-html="content"></div>
 
         <template v-if="shouldShow">
-          <p>Permanent link of this article：<a :href="siteURL+ '/post/'+ post.pathName">{{siteURL}}/post/{{post.pathName}}</a></p>
+          <p>Permanent link of this article:<a :href="siteURL+ '/post/'+ post.pathName">{{siteURL}}/post/{{post.pathName}}</a></p>
           <p>-- <acronym title="End of File">EOF</acronym> --</p>
           <div class="post-info">
-            <p> Publish at <i>{{post.createdAt}}</i> ，
+            <p> Publish at <i>{{post.createdAt}}</i>,
               Category under「
               <a :data-cate="post.category">
                   <code class="notebook">{{post.category}}</code>
-              </a> 」, and add tag under「
+              </a> 」,and add tag under「
               <router-link v-for="tag in post.tags" 
                   :to="{name:'tagPager', params: { tagName: tag }}"
                   :key="tag"
                   :data-tag="tag"> 
                   <code class="notebook">{{tag}}</code>
-              </router-link> 」, last update time <i>{{post.updatedAt}}</i>
+              </router-link> 」,last update time <i>{{post.updatedAt}}</i>
             </p>
           </div>
         </template>
