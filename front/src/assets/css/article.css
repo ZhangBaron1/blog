@@ -126,9 +126,11 @@ article pre {
   overflow: hidden;
   padding: 0.6em;
   position: relative;
+  /*
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word
+  */
 }
 
 article img {
